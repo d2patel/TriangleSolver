@@ -24,5 +24,75 @@ namespace TestClass
 
             Assert.That(actual,Is.EqualTo(expexted));
         }
+
+        [Test]
+        public void AnalyzeTriangle_Scalene_Test1()
+        {
+            int firstSide = 12;
+            int secondSide = 23;
+            int thirdSide = 24;
+
+            string actual = "A scalene triangle is formed";
+
+            string expexted = Triangle.AnalyzeTriangle(firstSide, secondSide, thirdSide);
+
+            Assert.That(actual, Is.EqualTo(expexted));
+        }
+
+        [Test]
+        public void AnalyzeTriangle_Scalene_Test2()
+        {
+            int firstSide = 10;
+            int secondSide = 12;
+            int thirdSide = 16;
+
+            string actual = "A scalene triangle is formed";
+
+            string expexted = Triangle.AnalyzeTriangle(firstSide, secondSide, thirdSide);
+
+            Assert.That(actual, Is.EqualTo(expexted));
+        }
+
+        [Test]
+        public void AnalyzeTriangle_Scalene_Test3()
+        {
+            int firstSide = 3;
+            int secondSide = 4;
+            int thirdSide = 5;
+
+            string actual = "A scalene triangle is formed";
+
+            string expexted = Triangle.AnalyzeTriangle(firstSide, secondSide, thirdSide);
+
+            Assert.That(actual, Is.EqualTo(expexted));
+        }
+
+        [Test]
+        public void AnalyzeTriangle_Scalene_Test4()
+        {
+            int firstSide = 2;
+            int secondSide = 4;
+            int thirdSide = 5;
+
+            string actual = "A scalene triangle is formed";
+
+            string expexted = Triangle.AnalyzeTriangle(firstSide, secondSide, thirdSide);
+
+            Assert.That(actual, Is.EqualTo(expexted));
+        }
+
+        [Test]
+        public void AnalyzeTriangle_Scalene_Test5()
+        {
+            int firstSide = 12;
+            int secondSide = 13;
+            int thirdSide = 20;
+
+            string actual = "A scalene triangle is formed";
+
+            string expexted = Triangle.AnalyzeTriangle(firstSide, secondSide, thirdSide);
+
+            Assert.That(actual, Is.EqualTo(expexted));
+        }
     }
 }
