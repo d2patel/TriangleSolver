@@ -94,5 +94,48 @@ namespace TestClass
 
             Assert.That(actual, Is.EqualTo(expexted));
         }
+
+        [Test]
+        public void AnalyzeTriangle_Isosceles_Test1()
+        {
+            int firstSide = 10;
+            int secondSide = 10;
+            int thirdSide = 15;
+
+            string actual = "An isosceles triangle is formed";
+
+            string expexted = Triangle.AnalyzeTriangle(firstSide, secondSide, thirdSide);
+
+            Assert.That(actual, Is.EqualTo(expexted));
+        }
+
+        [Test]
+        public void AnalyzeTriangle_Isosceles_Test2()
+        {
+            int firstSide = 2;
+            int secondSide = 2;
+            int thirdSide = 3;
+
+            string actual = "An isosceles triangle is formed";
+
+            string expexted = Triangle.AnalyzeTriangle(firstSide, secondSide, thirdSide);
+
+            Assert.That(actual, Is.EqualTo(expexted));
+        }
+
+        [Test]
+        public void AnalyzeTriangle_Isosceles_Test3()
+        {
+            int firstSide = 7;
+            int secondSide = 10;
+            int thirdSide = 7;
+
+            string actual = "An isosceles triangle is formed";
+
+            string expexted = Triangle.AnalyzeTriangle(firstSide, secondSide, thirdSide);
+
+            Assert.That(actual, Is.EqualTo(expexted));
+        }
+
     }
 }
