@@ -137,5 +137,89 @@ namespace TestClass
             Assert.That(actual, Is.EqualTo(expexted));
         }
 
+        [Test]
+        public void AnalyzeTriangle_ZeroInput_Test1()
+        {
+            int firstSide = 0;
+            int secondSide = 4;
+            int thirdSide = 5;
+
+            string actual = "At least one side entered had a zero - invalid triangle";
+
+            string expexted = Triangle.AnalyzeTriangle(firstSide, secondSide, thirdSide);
+
+            Assert.That(actual, Is.EqualTo(expexted));
+        }
+
+        [Test]
+        public void AnalyzeTriangle_ZeroInput_Test2()
+        {
+            int firstSide = 12;
+            int secondSide = 0;
+            int thirdSide = 25;
+
+            string actual = "At least one side entered had a zero - invalid triangle";
+
+            string expexted = Triangle.AnalyzeTriangle(firstSide, secondSide, thirdSide);
+
+            Assert.That(actual, Is.EqualTo(expexted));
+        }
+
+        [Test]
+        public void AnalyzeTriangle_ZeroInput_Test3()
+        {
+            int firstSide = 12;
+            int secondSide = 44;
+            int thirdSide = 0;
+
+            string actual = "At least one side entered had a zero - invalid triangle";
+
+            string expexted = Triangle.AnalyzeTriangle(firstSide, secondSide, thirdSide);
+
+            Assert.That(actual, Is.EqualTo(expexted));
+        }
+
+        [Test]
+        public void AnalyzeTriangle_NoTriangle_Test1()
+        {
+            int firstSide = 12;
+            int secondSide = 13;
+            int thirdSide = 30;
+
+            string actual = "A triangle cannot be formed";
+
+            string expexted = Triangle.AnalyzeTriangle(firstSide, secondSide, thirdSide);
+
+            Assert.That(actual, Is.EqualTo(expexted));
+        }
+
+        [Test]
+        public void AnalyzeTriangle_NoTriangle_Test2()
+        {
+            int firstSide = 2;
+            int secondSide = 5;
+            int thirdSide = 9;
+
+            string actual = "A triangle cannot be formed";
+
+            string expexted = Triangle.AnalyzeTriangle(firstSide, secondSide, thirdSide);
+
+            Assert.That(actual, Is.EqualTo(expexted));
+        }
+
+        [Test]
+        public void AnalyzeTriangle_NoTriangle_Test3()
+        {
+            int firstSide = 13;
+            int secondSide = 15;
+            int thirdSide = 40;
+
+            string actual = "A triangle cannot be formed";
+
+            string expexted = Triangle.AnalyzeTriangle(firstSide, secondSide, thirdSide);
+
+            Assert.That(actual, Is.EqualTo(expexted));
+        }
+
     }
 }
